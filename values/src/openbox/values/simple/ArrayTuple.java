@@ -3,7 +3,7 @@ package openbox.values.simple;
 import openbox.values.Tuple;
 
 public class ArrayTuple<E> implements Tuple {
-    private E[] value;
+    protected E[] value;
 
     @SafeVarargs
     public ArrayTuple(final E... value) {

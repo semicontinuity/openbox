@@ -3,7 +3,7 @@ package openbox.values.delegating;
 import openbox.values.IntValue;
 
 @SuppressWarnings({"UnusedDeclaration"})
-public class DelegatingIntValue extends DelegatingValue<IntValue> implements IntValue {
+public class DelegatingIntValue extends AbstractDelegatingValue<IntValue> implements IntValue {
 
     @Override
     public int get() { return delegate.get(); }

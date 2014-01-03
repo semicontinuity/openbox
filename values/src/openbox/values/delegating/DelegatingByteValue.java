@@ -3,7 +3,7 @@ package openbox.values.delegating;
 import openbox.values.ByteValue;
 
 @SuppressWarnings({"UnusedDeclaration"})
-public class DelegatingByteValue extends DelegatingValue<ByteValue> implements ByteValue {
+public class DelegatingByteValue extends AbstractDelegatingValue<ByteValue> implements ByteValue {
 
     @Override
     public byte get() { return delegate.get(); }

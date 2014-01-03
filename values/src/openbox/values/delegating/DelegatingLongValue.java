@@ -2,7 +2,7 @@ package openbox.values.delegating;
 
 import openbox.values.LongValue;
 
-public class DelegatingLongValue extends DelegatingValue<LongValue> implements LongValue {
+public class DelegatingLongValue extends AbstractDelegatingValue<LongValue> implements LongValue {
 
     @Override
     public long get() { return delegate.get(); }
